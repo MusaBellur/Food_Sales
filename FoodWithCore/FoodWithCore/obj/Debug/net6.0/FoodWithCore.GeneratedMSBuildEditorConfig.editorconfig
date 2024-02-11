@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Musa Bellur\Desktop\C# deneme\Food_Sales\FoodWithCore\FoodWithCore
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Musa Bellur/Desktop/C\# deneme/Food_Sales/FoodWithCore/FoodWithCore/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Musa Bellur/Desktop/C\# deneme/Food_Sales/FoodWithCore/FoodWithCore/Views/Food/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Musa Bellur/Desktop/C\# deneme/Food_Sales/FoodWithCore/FoodWithCore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
