@@ -12,6 +12,8 @@ namespace FoodWithCore.Models
 
         public string CategoryDescription { get; set; }
 
+        public bool Status { get; set; }
+
         public List<Food> Foods { get; set; }
     }
 }
