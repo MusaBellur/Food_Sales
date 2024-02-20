@@ -27,5 +27,16 @@ namespace FoodWithCore.Controllers
             categoryRepository.TAdd(p);
             return RedirectToAction("Index");
         }
+        public IActionResult GetCategory(int id)
+        {
+            var x = categoryRepository.TFind(id);
+            Category ct = new Category()
+            {
+                CategoryID = x.CategoryID,
+                CategoryName = x.CategoryName,
+                CategoryDescription = x.CategoryDescription
+            };
+            return View(ct);
+        }
     }
 }

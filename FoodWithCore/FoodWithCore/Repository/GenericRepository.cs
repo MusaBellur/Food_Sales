@@ -25,9 +25,9 @@ namespace CoreAndFood.Repository
             c.Set<T>().Update(t);
             c.SaveChanges();
         }
-        public void TFind(int id)
+        public T TFind(int id)
         {
-            c.Set<T>().Find(id);
+           return c.Set<T>().Find(id);
         }
         public List<T> TList(string t) 
         {
