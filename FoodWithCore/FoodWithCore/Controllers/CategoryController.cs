@@ -20,12 +20,12 @@ namespace FoodWithCore.Controllers
         [HttpPost]
         public IActionResult AddCategory(Category p)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                return View("AddCategory");
+                categoryRepository.TAdd(p);
+                return RedirectToAction("Index");
             }
-            categoryRepository.TAdd(p);
-            return RedirectToAction("Index");
+            return View("AddCategory");
         }
         public IActionResult GetCategory(int id)
         {
@@ -37,6 +37,16 @@ namespace FoodWithCore.Controllers
                 CategoryDescription = x.CategoryDescription
             };
             return View(ct);
+        }
+        [HttpPost]
+        public IActionResult UpdateCategory(Category p)
+        {
+            var x = categoryRepository.TFind(p.CategoryID);
+            x.CategoryName = p.CategoryName;
+            x.CategoryDescription = p.CategoryDescription;
+            x.Status = true;
+            categoryRepository.TUpdate(x);
+            return RedirectToAction("Index");
         }
     }
 }

@@ -7,7 +7,7 @@
 <h2>Category Add Page</h2>
 <br />
 
-@using (Html.BeginForm("AddCategory","Category",FormMethod.Post))
+@using (Html.BeginForm("UpdateCategory","Category",FormMethod.Post))
 {
     @Html.LabelFor(x => x.CategoryID);
     @Html.TextBoxFor(x => x.CategoryID, new{@class = "form-control"});
@@ -18,5 +18,5 @@
     @Html.LabelFor(x => x.CategoryDescription);
     @Html.TextBoxFor(x => x.CategoryDescription, new{@class = "form-control"});
     <br />
-    <button class="btn btn-info">Save</button>
+    <button class="btn btn-info">Update</button>
 }
