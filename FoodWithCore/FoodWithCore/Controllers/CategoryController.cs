@@ -48,5 +48,12 @@ namespace FoodWithCore.Controllers
             categoryRepository.TUpdate(x);
             return RedirectToAction("Index");
         }
+        public IActionResult DeleteCategory(int id) 
+        {
+            var x = categoryRepository.TFind(id);
+            x.Status = false;
+            categoryRepository.TUpdate(x);
+            return RedirectToAction("Index");
+        }
     }
 }
