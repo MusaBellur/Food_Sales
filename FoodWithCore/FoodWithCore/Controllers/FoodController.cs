@@ -31,6 +31,21 @@ namespace FoodWithCore.Controllers
             foodRepository.TAdd(p);
             return RedirectToAction("Index");
         }
+        public IActionResult GetFood(int id)
+        {
+            var x = foodRepository.TFind(id);
+            Food f = new Food()
+            {
+                FoodID = x.FoodID,
+                Name = x.Name,
+                Stock = x.Stock,
+                Price = x.Price,
+                ImageURL = x.ImageURL,
+                CategoryID = x.CategoryID,
+                Description = x.Description,
+            };
+            return View(f);
+        }
         public IActionResult DeleteFood(int id)
         {
             foodRepository.TRemove(new Food { FoodID = id});
