@@ -33,6 +33,13 @@ namespace FoodWithCore.Controllers
         }
         public IActionResult GetFood(int id)
         {
+            List<SelectListItem> values = (from y in c.Categories.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = y.CategoryName,
+                                               Value = y.CategoryID.ToString()
+                                           }).ToList();
+            ViewBag.v1 = values;
             var x = foodRepository.TFind(id);
             Food f = new Food()
             {
@@ -45,6 +52,19 @@ namespace FoodWithCore.Controllers
                 Description = x.Description,
             };
             return View(f);
+        }
+        [HttpPost]
+        public IActionResult UpdateFood(Food p)
+        {
+            var x = foodRepository.TFind(p.FoodID);
+            x.Name = p.Name;
+            x.Stock = p.Stock;
+            x.Price = p.Price;
+            x.ImageURL = p.ImageURL;
+            x.CategoryID = p.CategoryID;
+            x.Description = p.Description;
+            foodRepository.TUpdate(x);
+            return RedirectToAction("Index");
         }
         public IActionResult DeleteFood(int id)
         {
