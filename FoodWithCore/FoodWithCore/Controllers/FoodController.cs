@@ -2,6 +2,7 @@
 using FoodWithCore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using X.PagedList;
 
 namespace FoodWithCore.Controllers
 {
@@ -9,10 +10,12 @@ namespace FoodWithCore.Controllers
     {
         Context c = new Context();
         FoodRepository foodRepository = new FoodRepository();
-        public IActionResult Index()
+
+        public IActionResult Index(int page = 1)
         {
-            return View(foodRepository.TList("Category"));
+            return View(foodRepository.TList("Category").ToPagedList(page, 3));
         }
+
         [HttpGet]
         public IActionResult AddFood()
         {
@@ -25,12 +28,14 @@ namespace FoodWithCore.Controllers
             ViewBag.v1 = values;
             return View();
         }
+
         [HttpPost]
         public IActionResult AddFood(Food p)
         {
             foodRepository.TAdd(p);
             return RedirectToAction("Index");
         }
+
         public IActionResult GetFood(int id)
         {
             List<SelectListItem> values = (from y in c.Categories.ToList()
@@ -53,6 +58,7 @@ namespace FoodWithCore.Controllers
             };
             return View(f);
         }
+
         [HttpPost]
         public IActionResult UpdateFood(Food p)
         {
@@ -66,6 +72,7 @@ namespace FoodWithCore.Controllers
             foodRepository.TUpdate(x);
             return RedirectToAction("Index");
         }
+
         public IActionResult DeleteFood(int id)
         {
             foodRepository.TRemove(new Food { FoodID = id});
