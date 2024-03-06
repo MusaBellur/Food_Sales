@@ -44,6 +44,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcnRcU3RhdGlzdGljcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Musa Bellur/Desktop/C\# deneme/Food_Sales/FoodWithCore/FoodWithCore/Views/Default/Components/CategoryGetList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxDb21wb25lbnRzXENhdGVnb3J5R2V0TGlzdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Musa Bellur/Desktop/C\# deneme/Food_Sales/FoodWithCore/FoodWithCore/Views/Default/Components/FoodGetList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxDb21wb25lbnRzXEZvb2RHZXRMaXN0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Musa Bellur/Desktop/C\# deneme/Food_Sales/FoodWithCore/FoodWithCore/Views/Default/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Musa Bellur/Desktop/C\# deneme/Food_Sales/FoodWithCore/FoodWithCore/Views/Food/AddFood.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxBZGRGb29kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -66,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Musa Bellur/Desktop/C\# deneme/Food_Sales/FoodWithCore/FoodWithCore/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Musa Bellur/Desktop/C\# deneme/Food_Sales/FoodWithCore/FoodWithCore/Views/Shared/_SiteLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaXRlTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Musa Bellur/Desktop/C\# deneme/Food_Sales/FoodWithCore/FoodWithCore/Views/Shared/_ValidationScriptsPartial.cshtml]
